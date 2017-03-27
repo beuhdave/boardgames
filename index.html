@@ -1,0 +1,1452 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width"/>
+	<title>Check Out My Collection</title>
+	<style>
+		.tooltip {
+			border:2px solid #f7eed7;
+			border-radius:4px;
+			padding:10px;
+			margin-bottom:10px;
+			margin-left:0px;
+			background-color:#f7eed7;
+			font:12px Verdana;
+			line-height:18px;
+			box-shadow: 0px 3px 10px grey;
+		}
+			a {
+				cursor:pointer;
+				color:black;
+				text-decoration:none;
+			}
+			a:hover {
+				color:#ffcc66;
+				text-decoration:none;
+			}
+			label {
+				display:inline-block;
+				width:250px;
+				text-align:right;
+				padding:5px;
+			}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.imagemapster.min.js"></script>
+	<script type="text/javascript">
+				$(document).ready(function() {
+			$('img').mapster({
+				fillOpacity: 0.5,
+				render_highlight: {
+					fillColor: 'f7eed7',
+					stroke: true,
+					strokeColor: 'f7eed7'
+				},
+								clickNavigate: true,
+								fadeInterval: 50,
+				showToolTip: true,
+				onClick: function (e) {
+					$('#coordinateslabel').hide();
+					$('#deletelabel').show();
+					var thisId = e.key;
+					thisId = thisId.replace('game-', '');
+					$('#existing').val(thisId);
+					console.log($('#existing').val());
+					$('#game').val(thisId);
+					$('#description').val($('#hd'+thisId).val());
+				},
+				toolTipContainer: '<div class="tooltip" style="text-align:left;max-width:200px;"></div>',
+				mapKey: 'data-key',
+				areas: [
+													{
+									key: 'game-138',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Gallerist</b><br/>Here is my only commitment into a collectible game. This is the most expensive \'single game\' in my collection and I do have all the ships for the game (and two of each small one). I absolutely fell in love with the game and my group enjoys it too - our longest game took 11 hours in epic format, though we usually play it 2vs2 small squad teams. Squad selection is also incredibly addictive! You can see the actual ships on a separate picture.'
+								}
+							,								{
+									key: 'game-189',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tuscany: Expand the World of Viticulture </b><br/>Memoir 44\' is a big game, especially due to multiple expansions and maps. While it is not a \'great simulation of war\', it is unlikely that anything actually is. But as a game and form of entertainment I still prefer this over more \'realistic\' implementations of the theme. It is a great two-player game, but I also love playing even smaller maps with teams. They don\'t make games like this anymore, but this one has legs to stand the test of time!'
+								}
+							,								{
+									key: 'game-9',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Agricola: All Creatures Big and Small </b><br/>This game, in a custom made box, is a storytelling card game and should be played as such. My group really liked it, but the game left my collection for two years before I bought it again. It is difficult to get to the table because of its storytelling requirements, but I still love it! It\'s Addams Family in a box.'
+								}
+							,								{
+									key: 'game-182',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>San Juan</b><br/>I got this game as part of Eminent Domain expansion Kickstarter and I didn\'t expect much from it. But it has actually become my favorite game of its kind: a game where players select a card from a limited selection and double-guess what others might play to avoid clashes. It has a lot of variability and sets of play in the box as well!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-155',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Codenames: Pictures</b><br/>This push-your-luck card game is a thrilling filler. It\'s just about lightweight enough that luck does not bother you and at the same time it offers neat combinations between cards that allow you the feeling of discovery and rediscovery over multiple plays. While I prefer Welcome to the Dungeon primarily because it is a better \'group\' game, it is still one of those games that me and my girlfriend play to decide on some chores.'
+								}
+							,								{
+									key: 'game-141',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Twilight Struggle</b><br/>This is a little-known Kickstarter-funded game where players are attempting to survive a night of horror in the likes of Friday the 13th. While the game is technically deterministic, there is a lot of chaos and randomness in the game with groups that don\'t plan their actions well, so it is a hit-or-miss. But the mechanisms are intriguing enough to keep it in my collection.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-255',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Race for the Galaxy: Rebel vs Imperium</b><br/>This box does not sell very well what an awesome semi-cooperative bluffing and push-your-luck game is in it! Players are all attempting to steer an airship towards riches and avoid the doom. This is a great game because it\'s all about the players around the table. It is also very useful as a filler and it is easy to play multiple times in a row.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-128',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Ticket to Ride: Europe</b><br/>This is a really neat re-implementation of 7 Wonders in a two-player format. It is a really good game! But I can\'t get \'excited\' to play it, even compared to 7 Wonders. So my opinion about it is incredibly mixed. It\'s possible the best competitive two-player-game I\'ve played, but at the same time I\'d rather play something else?'
+								}
+							,								{
+									key: 'game-250',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Kremlin</b><br/>Bruno Cathala tends to lure me in with his games having such a wonderful artwork, but he keeps me interested with incredibly tight game mechanisms full of interesting decisions. While Kanagawa might fly under the radar, it is a great public-drafting game with slight push your luck elements and engine building. It is beautiful and very zen-like!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-249',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Twilight Imperium</b><br/>This social deduction game with a wonderful game mechanism where players physically steal items from the games own box has gotten mixed reviews so far. In some ways it is very sandbox-y in player discussion, which can always be hard on some groups, but on the other hand it is a little too similar to One Night set of games. I still keep hoping that it \'breaks through\' with the right group though!<br/><i style="font-weight:bold;color:#f7c036">first time, but not in collection any more</i>'
+								}
+							,								{
+									key: 'game-97',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mage Wars</b><br/>This is the game that replaced Forbidden Island from my collection as my preferred gateway cooperative game together with Pandemic. Every player is a thief with a special ability and players have to navigate a multi-floor building full of guards in order to find riches. It is tense, at times difficult, but always incredibly fun!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-91',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Terra Mystica</b><br/>I missed Viticulture on Kickstarter. In fact I did not even know what Kickstarter is back when this game got funded even a second time! But Jamey Stegmaier is a great designer who was all over other aspects of this wonderful worker placement game as well. I ended up paying premium in the aftermarket for the Collector\'s Edition and it was worth it. I really love it and when it is on the table, it is so always with a bottle of wine!'
+								}
+							,								{
+									key: 'game-257',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Pandemic Legacy: Season 1</b><br/>This is very likely my favorite push your luck filler game. It plays incredibly quick, but every game is about players around the table. Every player either removes some item from adventurer or adds monsters to the treasure - in other words slowly increasing the odds of adventurer failing the journey - until one player has to survive it. It has been hilarious whenever it\'s been on the table!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-136',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Stockpile</b><br/>This is by far the most polarizing game in my collection based on feedback I have gotten from 30+ sized playing group. Some love it, some cannot stand it. Those that love it enjoy it for variety of reasons, but those that dislike it can have their opinion summed up in a way that they tend to dislike a really open, social sandbox feel of the game - it is not \'guided\' enough. But I love it!'
+								}
+							,								{
+									key: 'game-130',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dungeon Petz</b><br/>While other One Night games have not seemed attractive to me, I do like the \'Resistance\' version of a One Night game due to the fact that roles and player actions work differently, allowing everybody to be involved without requiring an app. It\'s a good game, but hasn\'t been a \'hit\' yet with my group.'
+								}
+							,								{
+									key: 'game-8',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Specter Ops</b><br/>When I started my hobby I was unclear if social hidden role and deduction games like this would be a hit. Everybody only seems to be working towards the same goal, but some are traitors! I am glad I took a risk, because this game absolutely exploded with my group, leading to situations where I had to hug my sister after having betrayed her too many times in the game.'
+								}
+							,								{
+									key: 'game-32',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Star Wars: Rebellion</b><br/>In terms of bang for the buck, there is no greater giant than Coup. This game about bluffing and outsmarting your friends is absolutely brilliant and while you can really play it so much that you get tired of it, Coup still gets back on table frequently. It\'s a genius of a game design! This box includes Coup and it\'s more variable spin-off Coup Rebellion G54.'
+								}
+							,								{
+									key: 'game-165',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Catan</b><br/>Onitama quickly raised to become my favorite modern abstract game of all time. I really like the variability that the cards bring into the game, which strongly emphasizes the tactical element of every new play of the game. We\'ve even held a long tournament with this game in front and center and despite losing all three games and not advancing, I still loved it!'
+								}
+							,								{
+									key: 'game-205',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Kanban</b><br/>Aya is a game of dexterity and skill and light strategy. All players are building a contraption of domino-like pieces cooperatively, all of which culminates with a tipping of a single domino-like-piece and hoping to score the most points based on how do the blocks fall. It is wonderfully quirky, despite being very light and it works well as an end-of-night filler after brains are burnt out!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-293',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Blood Rage</b><br/>This is the only role-playing-game in my collection. Bought based on a really interesting article by Shut Up and Sit Down, I asked around and many in my group are interested in giving it a try. We have not played it yet so no idea if it will stay in collection. The red bag holds dice for the game.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-14',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>7 Wonders:Babel</b><br/>This wonderful and beautiful zen-like journey game is gem, improved further by the collector\'s edition with painted miniatures. While it can be used as a gateway, I\'ve found that it is also great with competitive and more experienced gamers to great effect. With different characters and powers and some variability introduced with expansions, I don\'t see it ever becoming stale!'
+								}
+							,								{
+									key: 'game-135',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>7 Wonders</b><br/>Often called the most epic board game of all time, this title is not an overstatement. This game is a space opera in all of its scope, from different races to diplomacy to wars to negotiation to absolute exhaustion after the game is over and done with. And while it rarely gets on the table, it is an event whenever it is there.'
+								}
+							,								{
+									key: 'game-30',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Summoner Wars: Master Set </b><br/>I\'ve had multiple editions of Hanabi, from the regular card game to the latest deluxe one with plastic blocks. It is a game that is very abstract in nature, but incredibly unique at the same time. This is a cooperative game where players don\'t know what is in their hands - while other players do. Through deduction and giving hints, players attempt to play their cards or blocks in the right patterns and score the most points together!'
+								}
+							,								{
+									key: 'game-56',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dead of Winter: The Long Night</b><br/>This is a neat little game that is likely unavailable anywhere outside Estonia. It relies on a humorous and satirical book by an Estonian author and borrows many mechanisms from games like Elder Sign. I can\'t recommend anyone chase it down, but it is a fun cultural pick-up if you happen to visit Tallinn!'
+								}
+							,								{
+									key: 'game-51',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dead of Winter: A Crossroads Game</b><br/>When I saw this game demonstrated by Shut Up and Sit Down in their review, I figured that such an \'amerithrash glitz\' is not for me. But I was so wrong! This \'Indiana Jones in a box\' is an absolutely entertaining thrill ride as long as players don\'t take it too seriously! It has a sandbox feel to it with some of the variants and everything from treasures to zombies to nazis to cliches are in that box.'
+								}
+							,								{
+									key: 'game-150',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Kingsburg</b><br/>They say that great ideas never truly die and Monikers is a living proof of that. This game takes pop-culture and internet memes, makes a Charades and trivia game out of it and then twists it into a spiral of comedy that any group of players are able to generate themselves. It is an absolute masterpiece of social humor, I highly recommend this to any group.'
+								}
+							,								{
+									key: 'game-d344',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Betrayal at House on the Hill</b><br>This is an alternative art edition of Love Letter card game. This will likely leave the collection soon as I am mostly getting the Deluxe edition of Love Letter to the table.'
+								}
+							,								{
+									key: 'game-245',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Through the Ages: A New Story of Civilization </b><br/>While hype was the reason this game entered my collection, it is staying due to production quality and gameplay. It is an action programming cooperative game that has a fair share of humor, chaos, but also control over the chaos and with varied scenarios to keep the players interested throughout. This could also work as a gateway game, but I\'ve not tried it with new players yet.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-107',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Scythe</b><br/>This game seemed too complex to me when I first read about it, but after playing Dungeon Petz I fell so much in love with Vlaada\'s sense of humor and theme that I just had to get this. And it is a heavy game that is difficult to explain and it bothers me that the game has two halves, but I really like it: the puzzle, the story, the everything.'
+								}
+							,								{
+									key: 'game-117',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Memoir 44</b><br/>It is important to me that the gaming collection grows with different themes and mechanisms first and foremost and Catacombs is a great example. While fantasy dungeon crawling is nothing new, everything else about this game is cutting edge in boardgaming innovation. The dexterity element of the journey and the humor this brings is priceless!'
+								}
+							,								{
+									key: 'game-288',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Game of Thrones: The Card Game</b><br/>This is my poker-kit, enough clay chips to last a 8-member poker night from beginning to end. I played a lot of poker before getting into the hobby, but I still have it in my collection (even if this kit is not visible on my other pictures).'
+								}
+							,								{
+									key: 'game-116',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Cosmic Encounter</b><br/>There was never any hope that Firefly actually fits into base game box. This game does to Firefly science fiction space opera what Merchants and Marauders does to pirate theme, but it is quite different with its crew building and mission based structure. My group loves this game even though it can take a little too long! It also includes the all-in-one rolled up playing mat.'
+								}
+							,								{
+									key: 'game-53',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mission: Red Planet</b><br/>While this game is about gladiator fights, it is more about intrigue and struggles in Rome and the quest to be more powerful than other players houses. You buy and sell slaves and equipment and gladiators - as expected from the theme. And at the heart of the game are the glorious fights, where every house can bet, backstab and otherwise manipulate their friends!'
+								}
+							,								{
+									key: 'game-132',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dark Moon</b><br/>This game was a Kickstarter project that has split the opinion of gamers around the globe, some really don\'t like it. But I do and so did my group when it was on the table. It\'s an adventure game in a post-apocalyptic world much like in Fallout computer games. While it is a competitive game, it involves cooperative elements where it is in everyone\'s interest that a player does not turn into a mutant - an enemy for all.'
+								}
+							,								{
+									key: 'game-110',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Game of Thrones: The Board Game</b><br/>This fantasy area and engine building game is one of my favorite strategy games of all time! Asymmetric factions are great, but the core of the game is the incredibly well balanced game mechanisms that entwine perfectly with one another. While some consider the cult track to be something not necessary, I find that it suits the game well and gives it a dimension for strategies if you get otherwise stuck.'
+								}
+							,								{
+									key: 'game-95',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Space Alert</b><br/>This is very likely my favorite euro-game. It has everything I love, from strong player interaction to high variability and replayability to tight decisions. It involves tile laying, role selection, worker placement and all of it in a shared economy of a western-themed city being built together. This game is a masterpiece!'
+								}
+							,								{
+									key: 'game-126',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Voyages of Marco Polo</b><br/>This is one of the first (if not the first) board game project and/or Kickstarter from South Africa, I believe. It\'s a Yahtzee style dice game that I usually would not have on my shelf - except I actually like the dice \'game\' itself in this more than I do in cooperative Elder Sign. I have a weakness for Yahtzee style dice games, I know, but I like it!'
+								}
+							,								{
+									key: 'game-190',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Star Trek: Frontiers</b><br/>This game is not very well known, but it is one of the tightest, most interaction-heavy euros just like I love them. The theme of running a business in an incredibly low income island in the middle of nowhere while entertaining tourists is really great. Role selection - similarly to Carson City - is at the core of this game.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-11',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Caverna: The Cave Farmers</b><br/>I like this little brother of Arkham Horror and awkward sibling to Eldritch Horror. I discovered it on TableTop show and I must admit that I still find it my preferred version of Yahtzee style dice mechanism. It\'s fun, it\'s thematic and it does not take too long and you still get to put a stop to any kind of Ancient Ones out there. It has neat expansions too, some which add interesting variants of play!'
+								}
+							,								{
+									key: 'game-183',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Betrayal at House on the Hill: Widows Walk </b><br/>Speaking of flying under the radar, this one swims beneath the ocean. When I finally learned about this game it shocked me that I had no idea this exists. The humor of goblins trying to survive in ever-failing soviet submarine alone is a great selling point, but the time management element and mechanisms for fires and floods and semi-cooperative nature make this game into a pure joy. While it has its flaws, I enjoy it every time!'
+								}
+							,								{
+									key: 'game-62',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Viticulture Essential Edition</b><br/>This is a great area majority game that is themed around a violent fantasy football matchups between teams from Warhammer universe. Using your teams resources you have to carefully balance what matches you invest more, in hopes to score victory and reap rewards. This is my favorite game of this kind and it is the main reason why Dogs of War or Shinobi Clans are not in my collection. This small box is completely full of game components thanks to its two expansions! This can be difficult to find in stores today, however.'
+								}
+							,								{
+									key: 'game-172',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Coup: Rebellion G54</b><br/>While I picked Clash of Cultures for my Civilization-computer-game equivelant, that game is perfectly complimented by this one. It\'s very different and involves no area control elements whatsoever, but it\'s one of the best examples of a board game balancing act of effectiveness. I highly recommend any serious board gamer to give this game a try at least once!'
+								}
+							,								{
+									key: 'game-81',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Puerto Rico</b><br/>Have you heard about Dice Masters? This game is the game that came before Dice Masters. A lot of colorful dice, a lot of interesting card effects, this game laid foundation to many other games. I still prefer Quarriors though even as it may not be as polished and I really like that it can be played with more players than 2!'
+								}
+							,								{
+									key: 'game-129',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>T.I.M.E Stories</b><br/>While everyone must have said it already, this game combines Mysterium with The Resistance - but without replacing either. It\'s been one of my most successful games even with non-gamers, as majority of players are detectives trying to find the murderer. A lot of discussion is involved and at the end of the game, most players wish to try the role of the forensic scientist who is the one who cannot speak, knows the murderers clues and has to hint based on his own cardboard hint boards! Really fun!'
+								}
+							,								{
+									key: 'game-20',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Power Grid</b><br/>While I managed to avoid this game literally for years due to its infamy of being very chaotic, the expansion for it made me look at it again. So I bought it, got it on the table for Halloween, and everybody absolutely loved it. Yes it\'s not a tense strategy game, but it is entertainment through and through and much like Tales of the Arabian Nights, it deserves its place here.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-10',
+																			selected: false,
+																		isSelectable: false,	
+									isDeselectable: false,
+																		toolTip: '<b>Citadels</b><br/>This is a wonderful and thrilling and unique cooperative game by Matt Leacock. Players are trying to save the world by putting an end to four terrible diseases that wreak havoc around the globe! This game has good expansions which add a lot of replayability and this game was the basis of Pandemic Legacy which my group played through and enjoyed so much that we are still telling stories about it!'
+								}
+							,								{
+									key: 'game-78',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Innovation: Echoes of the Past</b><br/>I have always loved Civilization computer games, but once I left computer gaming behind me, I needed a void to be filled. This game covers my favorite part of Civilization games: the ancient era. And it\'s great! I love the technology tree mechanisms, I love how the map works and it\'s all very streamlined without sacrificing depth. Expansion - which is impossible to get these days - makes it even better!'
+								}
+							,								{
+									key: 'game-206',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Race for the Galaxy: The Gathering Storm</b><br/>I remember looking at earlier version of this gathering dust at my friendly local gaming store and not being impressed by it. I am still not impressed by it now that I own a newer, sleekier Mucha-art-inspired edition. But I like it. Mechanisms are pretty much unique and I like the arc in this game. Kill Doctor Lucky is all about making sure you take the most out of your turns in order to tip the balance to you for the right moment to strike. Yes, it is not great, but it is good!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-164',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Bang! The Dice Game</b><br/>This is a game that works well both as a gateway game or an end-of-gaming-night semi-filler with a more experienced group. It\'s entertaining and beautiful, not too serious and gives players just enough opportunity to compete with one another in this race of pirates. Love it!'
+								}
+							,								{
+									key: 'game-243',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Carcassonne: Expansion 1 – Inns & Cathedrals</b><br/>Not many know this early Artipia Games kickstarter project, but this deserves a look. It is a tense, really well balanced and polished worker placement game system where players are building the most successful circus. It does not have as much theme as I\'d like, but the array of characters and powers and actions you end up doing reminds you of.. a circus act, perfectly balanced and executed.<br/><i style="font-weight:bold;color:#f7c036">first time, but not in collection any more</i>'
+								}
+							,								{
+									key: 'game-263',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Carcassonne: Hills & Sheep</b><br/>I avoided this game for a while due to it being released so close to Hyperborea at the same year - both being drawing-cubes-from-a-bag games similarly to deckbuilders. But while Hyperborea is a hybrid of theme and mechanisms, Orleans is all about euro-game contraptions. And while I am amused that almost all medieval-age games on my shelves happen to take place in France, I really like this game and it stands apart from other eurogames well.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-260',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Viticulture: Moor Visitors Expansion</b><br/>I had a faint memory of this game from way back when Shut Up and Sit Down reviewed earlier version of this. So when I discovered this new edition on a trip to Stockholm with my girlfriend, she picked it up - and I bought it. It\'s a great hidden movement game, which is a genre I really like and it stands apart from other giants of the genre very well. This claustrophobic escape from aliens is wonderfully tense!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-52',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Resistance: Avalon</b><br/>This is a game that I would likely have never discovered hadn\'t Shut Up and Sit Down made me aware of it. Not highly ranked, not much talked about. But it is a great game for a larger social group! Players are separated into teams where one is a gentlemen and another is a lady who wants to go to a ball. So - dripping with satire - gentlemen do the simple job of getting money and ladies do the hard job of getting their outfit ready. This game is hilarious with the right group!'
+								}
+							,								{
+									key: 'game-154',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Cosmic Encounter: Cosmic Incursion</b><br/>Shut Up and Sit Down helped me \'rediscover\' this game that I had discounted after dismissing it due to box artwork (superficial, I know, sorry!). But this game by Mac Gerdts is brilliant, full of interesting decisions in how to develop a trading and manufacturing network in mediterranean and outsmarting and outplaying your fellow players. Great!'
+								}
+							,								{
+									key: 'game-37',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Innovation</b><br/>This is a worker placement set in Dungeon and Dragons Forgotten Realms world. Many expected this game to be about action, but this is thematically about political and economical manipulation in city called Waredeep. You get contracts and send adventures on tasks and score fame and glory as a result! This is a worker placement game where players also get to build new buildings - which become new action slots for workers. I like it and expansion adds a lot! I also upgraded the \'cubes\' to meeples, which is something I recommend everyone to do.'
+								}
+							,								{
+									key: 'game-121',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Go</b><br/>This is another game that has flown under the radar, yet it deserves a spot in any collection that fits euro-game influenced area control games. It fits right alongside Kemet, Cyclades, Inis and more! This is a bag-building game where you develop your faction based on cubes that are put into the bag and then drawn for new turns. It has technologies, chained effects and a lot more. I really love this game and suggest anyone who likes Orleans, but wants more interaction, to try this out!'
+								}
+							,								{
+									key: 'game-64',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>7 Wonders: Cities</b><br/>This is an early design-gem by Vital Lacerda and still my favorite of his games as I feel his later designs are getting too loaded with mechanisms. This game is perfect and mechanisms are incredibly well connected and all circles around the tight economy model in the game where money is not gained out of thin air. This is a great strategy game and I hope that the upcoming second edition only improves on it!'
+								}
+							,								{
+									key: 'game-242',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>7 Wonders: Leaders</b><br/>I don\'t generally like deckbuilders unless they have a twist of some sort just like I don\'t like Coca Cola without a dash of rum in it. And a squeeze of lemon juice. This game is exactly what I like, however. The area movement push your luck game driven by deckbuilder engine is an absolute entertainment. I only wish it had a little more player interaction!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-275',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Stockpile: Continuing Corruption</b><br/>Shut Up and Sit Down made me avoid this for a while. But a man like me cannot avoid this another medieval game set in France for too long. Yes it is a little complicated for what it is and yes it is more tactical and sometimes relying on luck to create an epic worth retelling, but with the right group, it can be great. And very different from anything else I\'ve played!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-173',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Chess</b><br/>I did not back the Kickstarter and my wallet suffered for it, but I finally managed to buy the Kickstarter edition of it. It is a really good game, but it has it\'s flaws in terms of it\'s three-act structure and power balance being ramped up a little too heavily making earlier turns less important. But it\'s epic on the table and incredibly replayable!'
+								}
+							,								{
+									key: 'game-285',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>MindTrap</b><br/>Back when I bought The Cave, I considered K2 as well, but found them too similar games by the same designer. But now that I know it well, they are quite different and while they can be enjoyed by the same group as The Cave, K2 takes players on a journey they find fascinating as they get surrounded by its theme, in what is otherwise a very abstracted game.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-272',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>DGT North American Chess Clock</b><br/>No Pun Included is to be blamed for me having this game from Latvia - the only game that does not have a good horizontal box side - on my shelf. It is easy to overlook this game just like I did when it was back in Kickstarter. But a diceless miniatures combat game that nears in its execution that of Neuroshima Hex but with a completely different set of mechanisms? It\'s wonderful.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-268',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Carcassonne</b><br/>While often compared to Battlestar Galactica, it is very different from it. This is an intrigue filled semi-cooperative and quite a bit selfish strategy game of managing a city that is in chaos while still getting a profit. This game - set in the Android universe - is full of tense negotiations and deals as well an incredibly unique winning conditions where a player is usually only competing against one other player.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-262',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Carcasonne</b><br/>This game by Matagot has seen a few editions over time and while I avoided it due to personal preferences in some of its first edition choices in terms of how characters were named, the new edition fixes that and gives more depth and variability to the game with its expansion. It\'s thrilling and thematic, but its one of those games where you should help new players understand all facets of the game before playing, otherwise the game might fall off balance.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-266',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Rummikub</b><br/>My girlfriend keeps my gaming collection honest. She likes picking up games of beautiful artwork from the stores, then handing me the pile to select out games that are actually good. And Arboretum is one of those games. It\'s a multi-layered card game of notable depth paired with double-guessing. It\'s a really neat and pretty package!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-278',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Beyond Balderdash</b><br/>I was one of the many who dismissed the game purely because of the artwork and price. Yet now that it is on my shelf, I\'d say that game components in hand are far more attractive and price is worth the \'game\' in the box. This is an incredible strategy game and possibly one of the best out there in terms of depth. While the sandbox feel can be difficult to grasp at first, once players realize how the game simulates real life business, this is an experience unlike anything else on these shelves.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-35',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Scattergories</b><br/>Takenoko is my go-to gateway game these days right next to Ticket to Ride. Beautiful game components and humorous theme help and the game board has a three dimensional feel to it which makes it attractive all around. I highly recommend Takenoko to anyone wishing to get someone interested in modern board games without having to resort to Ticket to Ride every time!'
+								}
+							,								{
+									key: 'game-122',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Game of Thrones: The Board Game – A Dance with Dragons</b><br/>This is another one of those flying-under-the-radar boardgaming gems that many have not heard about. It\'s a nearly complete outsmarting-your-friends negotiation game. It looks great, has humorous interpretation of a zombie survival theme and does not last too long to outstay its welcome. This is good, so very good!'
+								}
+							,								{
+									key: 'game-5',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Game of Thrones: The Board Game – A Feast for Crows</b><br/>There\'s a reason why this Antoine Bauza\'s game is continuing to be a top seller in boardgaming world. Every player is building their own civilization in a tableu in front of them, creating combinations between cards for scoring points. It\'s quick playing card drafting game with easy-to-like theme that gets players addicted and wanting for more!'
+								}
+							,								{
+									key: 'game-248',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>We Didnt Playtest This At All</b><br/>This is a simple double-guessing card game where players are robots swimming away from a Shark - player that plays the lowest card or one that another player played simultaneously become last and might be bitten. And every player starts with the exact same set of cards! It\'s a great filler for any event.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-289',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Resistance</b><br/>My girlfriend showed this to me almost six months before I actually bought it. Dice Tower review of it was really positive, but I misunderstood some rules in the games explanation and thus dismissed the game. It was only later on, when the game almost became out of print, that I realized my error in my understanding of this thematic-abstract board game! Your piece can move anywhere as long as road is not blocked! It suddenly clicked and I bought it and I like it.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-59',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Coup: Reformation</b><br/>This is an old one, a deduction game released somewhat ahead of its time. It is at the same time Clue-done-right and social humor in a box. The theme about monks wanting to solve a murder without authorities getting involved is great and the game gives players an opportunity to \'play with each other\', as social interaction plays a huge role. Really fun!'
+								}
+							,								{
+									key: 'game-92',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Sushi Go!</b><br/>You don\'t see a lot of Spiel winners in my collection as they usually are a little too family friendly and gateway-like, but I absolutely love this game about betting and camel races. It manages to \'get\' race betting in a way more realistic games don\'t. This game manages to perfectly balance the feeling of luck and the desire to be above it and the humorous theme helps keep it less serious!'
+								}
+							,								{
+									key: 'game-3',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Fairy Tale</b><br/>I consider this game a must-have in any gaming collection, even if you get somewhat tired of it over time. This is a brilliant game that is quick to explain and can be enjoyed by variety of groups. If you grab a few more maps for it, then it stays fresh even for an experienced gamer. I also consider it a better entry to the hobby than Catan.'
+								}
+							,								{
+									key: 'game-146',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>One Night Ultimate Werewolf</b><br/>This is Danse Macabre, another game that is likely not very available outside Estonia. It is a two-player double-guessing outsmarting game where players - Satan and God - are luring souls over to their side. Game board is the famous painting.'
+								}
+							,								{
+									key: 'game-151',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>7 Wonders Duel</b><br/>This is a Firefly themed dice game that was a gift from my girlfriend. It\'s clunky and sometimes plays itself and it\'s more entertaining as a solo game, but it has great components and deserves a place for nostalgic reasons more than anything.'
+								}
+							,								{
+									key: 'game-61',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>T.I.M.E Stories: The Marcy Case</b><br/>This game is not very well known, but it is a beautiful production by Matagot. It\'s a gateway-like abstract game with a neat theme of beginnings of civilization and evolution of mankind on top of it. I have been close to selling this game multiple times as it does not get to the table enough, but I still have it and still enjoy it when it gets to the table.'
+								}
+							,								{
+									key: 'game-50',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Spyfall</b><br/>Rampage is a dexterity-skill focused board game that is easy to explain and play. It is all about social fun and the joy of it all as every player is a monster that is destroying this meeple-and-tile-ridden fictional world! I remember when I explained the rules of this for the first time and the laughs I got once my unaware players realized what their actions actually consist of can never be forgotten!'
+								}
+							,								{
+									key: 'game-1',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Treasure Chest</b><br/>Dixit is the wonderful card game that I used incredibly successfully as a gateway game for getting people interested in modern board games. It\'s beautiful, it\'s social and it\'s eye-opening. And it deserves to be in every social-oriented board gaming collection. It has been played in regular gaming nights, birthday parties and casual nights with friends!'
+								}
+							,								{
+									key: 'game-259',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Thurn and Taxis</b><br/>I\'ve always found Jenga to be a too simple game for my tastes and it\'s not like Junk Art is much complicated, but it is more beautiful and more variable. And while dexterity and skill games like this don\'t get grabbed too often, it is one of those games that works really well with gamers and non-gamers alike!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-163',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Gloomhaven</b><br/>This game, set in the World of SMOG universe, is rarely seen on board game shelves. But not only is this game incredibly beautiful, it is also a neat semi-thematic abstract puzzle full of player interaction. While it is difficult to find these days, it is certainly worth a try if you get a chance!'
+								}
+							,								{
+									key: 'game-29',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dominion</b><br/>Ascension is the purest deckbuilder I own and this edition - Rise of Vigil with its Darkness Unleashed - was my favorite of all Ascension sets due to energy mechanism. It is one of the only games that I don\'t own all the expansions for simply because this big box and the small Darkness Unleashed box make for the best of what I think Ascension has got to offer. The lower box is Storm of Souls set which belonged to my ex.'
+								}
+							,								{
+									key: 'game-22',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Love Letter</b><br/>Love Letter was a complete hit the year it was released and it\'s still one of my favorite filler games despite having played hundreds of rounds of it. It relies a lot on \'playing with your friends\' rather than just game mechanisms, which gives it a rather long life.'
+								}
+							,								{
+									key: 'game-167',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Legendary Encounters</b><br/>This Alien-themed game replaced Marvel Legendary from my collection. It\'s a more tight and balanced deckbuilder and more thematic for what it is doing. It\'s difficult, but at the same time it has not been bloated with mechanisms the way Marvel set has been over time. It has one expansion, but it didn\'t go insane and also added a neat one-vs-many element to the game better than the base game did.'
+								}
+							,								{
+									key: 'game-186',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Freedom</b><br/>This is a very thematic cooperative game about abolishment of slavery in America. It\'s a difficult game, but one that is not burdened because of this difficulty and players want to try again and again, which fits the theme even though it can never get close to what people of that time had to struggle with. This is a reminder that a game can be more than just a game.'
+								}
+							,								{
+									key: 'game-238',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Big Book of Madness</b><br/>We looked into this game in a Finland game store after having read about it a little. It sounded great, but I wanted to research more over coffee. But when we returned to the store the game had been bought! And not one, but two copies! This cooperative game took its sweet time to arrive to our shelf as a result all across Europe, but it was worth it - it\'s a great cooperative semi-deckbuilder!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-292',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Topoum</b><br/>This game from Spain about moles in World War I is.. Re-reading that introduction makes me realize that this might be enough to hook a player (and this certainly hooked my group!). It is one of the semi-thematic abstracts that I really enjoy, both easy to explain and tactical in nature. Recommended!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-279',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Citadels</b><br/>I avoided this game primarily because I disliked the small box and the visually plain artwork the game carried. And I was so happy to hear it will get a modern polish in the new edition! This role-drafting game has more depth than first seems and while many compare Libertalia to this, I find them quite different and appealing at a different level. Great game!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-106',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Eminent Domain</b><br/>It is difficult to define this game. It\'s a card based tableu building game that has a \'follow\' mechanism, where other players can do whatever you decide to do on their turn. It\'s a neat engine building with awkward technology tree and it\'s a hit or miss with some groups, but I really like it and there\'s no way I\'ll get rid of this game! It sort of feels like sandbox tableu building game, if this makes sense.'
+								}
+							,								{
+									key: 'game-283',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Karuba</b><br/>It is very rare for family-style game to get on these shelves, but just like Camel Up, this game has mechanisms that appeal to experienced gamers. It is such a brilliantly simple idea to have a game that everybody plays separately - without interaction (which would be a dealbreaker to me usually!) - but with the exact same options and rules as everybody else, only to end up very differently from everybody else. This is an amazing game!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-197',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mythotopia</b><br/>I really like Martin Wallace\'s deckbuilder-driven area-influence games. Mythotopia looks incredibly dry for a fantasy game, with hand drawn artwork and muted tones across the game board. But it\'s the mechanisms and variability which shine in this little-known-gem! While some find flaws in the drawn out ending to the game, I think that if newer games like Inis get away with it, so should Mythotopia. I recommend trying this!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-282',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Troyes</b><br/>I awaited a few years for this to get reprinted and become available at reasonable price. This dice-driven tactical eurogame with some strategic depth to it is ahead of its time: none of it feels like it is from 2010! This is a great strategy game, though I\'ve not had a lot of experience with it yet.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-73',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Redacted</b><br/>This game is not all that well known, but I really like it! It humorously involves agents and spies of different countries sent to an embassy party during cold war. You have a teammate, but you don\'t know who that is and the games mechanisms are about outsmarting your opponents, grabbing the intel and getting the hell out as quickly as possible. It has brought many laughs on my gaming nights!'
+								}
+							,								{
+									key: 'game-74',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Assault on Doomrock</b><br/>Not many know about this game and it is hard to find today, but this game is brilliant. It\'s a cooperative game where your group of heroes attempts to utilize their skills the best in order to survive three combat encounters of increasing difficulty. This is a combat game done right as randomness does not decide if you succeed, it only decides what you are able to do. Very rogue-like and extremely addictive!'
+								}
+							,								{
+									key: 'game-24',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Stone Age</b><br/>Stone Age was my first euro-style strategy game. It is very beautiful to look at, has slight element of tactical luck where your workers success is determined by dice, but it has a layer of engine building and multiple neat ways to score points. Works great with less experienced gamers as well!'
+								}
+							,								{
+									key: 'game-207',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Agricola</b><br/>I used to have a rule that farming is too dry a theme for a gaming collection. But once I managed to play Agricola, I fell in love with it! while I think that Uwe Rosenberg has jumped the shark with his newer games that are action and point salads to the sandbox extreme, Agricola is a masterpiece in game design. It\'s incredibly tight and focused and very thematic at the same time. Great game!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-103',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>CV</b><br/>Not many know about this gem of a game! And while my collection has it\'s share of Yahtzee mechanisms, it is the theme and humor of it that keeps it in my collection. Players are essentially building a tableu in front of them that build up their \'life\', from marriages to unemployment problems to having babies - each of which offers special abilities and affects your following turns. Who knew that babies require good income!?<br/><i style="font-weight:bold;color:#f46b42">not in collection any more</i>'
+								}
+							,								{
+									key: 'game-240',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Star Trek Panic</b><br/>I managed to avoid Panic series of games for quite a while, preferring Ghost Stories and similar cooperative games, but this game made a Panic series game great in my opinion! It has a far more dynamic game board and player options and it manages to take players into a journey of classic Star Trek series adventures in an entertaining way. This is a really good game, I only wish it would get at least one expansion!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-131',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Portal</b><br/>Oh how I was skeptical when one of the new players in my group took the risk and gifted me a game for Christmas. I tend to know everything there is to know about games that have any chance of interesting me and this one wasn\'t one of them - despite knowing the video game. But playing it I ended up liking it! It\'s a smart semi-thematic abstract game with a lot of options for outplaying your opponents.'
+								}
+							,								{
+									key: 'game-7',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tales of the Arabian Nights</b><br/>This game is a gem. You\'re a hero whose journey might become one of the stories told in One Thousand and One Nights! Many consider it chaotic and random, but I really like the stories it tells from a huge book it has in the box. Having a group of friends around the table, enjoying a drink or two, it is a perfect opportunity for escaping into these mystic tales.'
+								}
+							,								{
+									key: 'game-215',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Santorini</b><br/>I have only a few strongly abstract games on these shelves, primarily due to most being too distant from the theme and too abstract in origin that removes all the imagination from players. Santorini does the opposite. It is a smart abstract game with a lot of variability due to god power cards and enough of tactics mixed in that gives the game a near infinite replayability. This is an amazing game!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-273',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Three Musketeers</b><br/>This game, subtitled The Queen\'s Pendants, is on you have likely not heard of! I did not know it either until my girlfriend discovered it in one of the local boardgaming community auction. But it has miniatures, a beautiful board, one-versus-many action-adventure structure and double-guessing mechanisms. It is a fun, thematic and heroic romp while a good game at the same time!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-169',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Level 7: Omega Protocol</b><br/>If XCOM board game nails the global strategy part of XCOM video games, this game nails the tactical combat of XCOM games. And to this day I consider this the best dungeon crawler game out there, primarily because it manages to so incredibly balance the \'enemy\' players actions with that of the players. It\'s absolutely great and is slowly getting out of print, so if you are at all interested, take a look at some videos!'
+								}
+							,								{
+									key: 'game-244',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Shogun</b><br/>Shogun is an epic area control strategy board game with thematic elements left and right, without sacrificing strategic opportunities and planning. Every player intends to gain power in medieval Japan while dealing with local population and economy at the same time. This is one of the best euro-wargames out there!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-159',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mysterium</b><br/>I tried so hard not to buy this game. I felt like the hype is too \'big\' for this when Portal Games released it in Europe. But once Libellud re-made most of the artwork and tweaked the games rules, it was difficult to resist once my girlfriend became charmed by it. And for good purpose! This cooperative game where a ghost attempts to give clues to investigators is brilliant both socially and as a puzzle created by the group!'
+								}
+							,								{
+									key: 'game-94',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Ghost Stories</b><br/>Differently from a common belief that this game beats you up the moment you open the box, I think that this is a difficult - but not at all impossible - cooperative game of surviving with skilled monks against waves of ghosts and monsters. While it\'s considered a modern classic today, it is still one of the best cooperative games and is highly recommended even as a gateway game!'
+								}
+							,								{
+									key: 'game-71',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Lords of Xidit</b><br/>This re-implementation of Himalaya board game takes place in the same thematic setting as Seasons. This means that the game and artwork is beautiful and components are pretty much perfect for a game like this. This game is about outsmarting and outguessing your friends through pre-programmed movement mechanism, gathering forces, defeating monsters and having bards sing songs about you for eternity. While it did not get universal praise, I still highly recommend it!'
+								}
+							,								{
+									key: 'game-31',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Seasons</b><br/>Seasons was my early pick for a \'collectible-like\' card game. I was never attracted to Magic or Netrunner and I disliked collectible aspect and I found that Seasons gave me all that without the things I don\'t like in collectible games. Seasons has card synergies, depth, engine building and is incredibly addictive. It\'s a brilliant game and endlessly replayable, especially with the expansions.'
+								}
+							,								{
+									key: 'game-123',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>And Then We Held Hands</b><br/>Do you want to scare that neurotic friend couple of yours? This game is about two players trying to cooperatively solve a problem that draws its theme from fixing a crisis in a relationship. And neither player can talk, discuss or hint at any strategy! It is about reading what your partner is doing and why, it is about keeping options open and making sure game does not lock either of you in. Brilliantly thematic and scary, if sold well during rules explanation!'
+								}
+							,								{
+									key: 'game-100',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Council of Verona</b><br/>While this game has not sadly gotten much praise from my game group, I still like it and enjoy it when it sneakily gets to the table! This is a game that is themed around Romeo and Juliet and it\'s about betting on cards on the table that will score if their conditions are met at the end of the game. So it\'s about double-guessing what your opponents want to do and matching it to your own goals. It\'s really neat!'
+								}
+							,								{
+									key: 'game-16',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Small World</b><br/>Another one I picked up thanks to YouTube show TableTop. As with every other game, I also own all the expansions and promos for them and it shows as boxes are completely full. I enjoy the humor, the immense replayability of race and power combinations and the ease of explanation. Still one of my favorites and still incredibly unique.'
+								}
+							,								{
+									key: 'game-58',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dead of Winter</b><br/>Many have (incorrectly, in my opinion) compared this game to Battlestar Galactica. But it is very different and players that enjoy this do not necessarily enjoy the other and vice versa. This game was a hit when it released and to this day is still the definite \'zombie game\', that captures the personal struggles of the survivors more than the combat against the dangers of the world. Brilliant game, albeit misbalanced with traitor at times.'
+								}
+							,								{
+									key: 'game-184',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Bloody Inn</b><br/>Another one of the games that seems to be flying under the radar, but one that I heartily recommend! In this game players are all managing an inn with an intention to get rich. But how? Through murder and theft! It is black and dark humor through and through as you try to balance murder with hiding bodies with staying away from the watchful eye of the police. Brilliant! Yet creepy. But brilliant!'
+								}
+							,								{
+									key: 'game-118',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Five Tribes</b><br/>This is another game that took its sweet time before I gave it a chance, only to fall in love with it once I did so. It\'s a great game that is abstract in nature and while it incredibly encourages analysis paralysis, it does not bother me and I can play it casually as well. And being very beautiful helps tremendously!'
+								}
+							,								{
+									key: 'game-108',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Penny Press</b><br/>Subpar marketing has kept this game flying under the radar. This is actually a winner of Tabletop Deathmatch, a YouTube show funded by guys from Cards Against Humanity. And it is a deserving winner! It\'s an area majority game with a timing effect, where players are running a newspaper and send reporters to report on news. Where timing comes in is who gets to publish it first, which happens when you remove your journalists and get the paper to print. It\'s incredibly neat game!'
+								}
+							,								{
+									key: 'game-124',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>T.I.M.E Stories</b><br/>This is one of the most \'overbooked\' games in my collection and we\'ve played every single expansion with great enthusiasm. This cooperative game - a story driven and incredibly thematic puzzle of sorts - gets everyone involved even when it is an evening before a work day. This is a great game and incredibly innovative.'
+								}
+							,								{
+									key: 'game-65',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Nothing Personal</b><br/>This game is Tom Vasel\'s reimplementation of a game called Kremlin. It takes what makes Kremlin great in mechanisms, changes theme into mafia and crime and polishes the game to near perfection. This game should be talked about more, I find it better than Cosmic Encounter and many other negotiation games because Nothing Personal feels and plays in a more dynamic and interesting way. Love it!'
+								}
+							,								{
+									key: 'game-54',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>War of the Ring</b><br/>This game is Lord of the Rings in a box. It begins with Frodo\'s journey from Rivendell and ends with Mount Doom - hopefully! This epic dudes-on-a-map war game is dual-layered. On the one hand it\'s an area control war game, but on another it is a push your luck, semi-hidden-movement adventure game. And this dual-layered nature is what makes this game a masterpiece, as a careful balance between the two mechanisms is what creates all the interesting decisions.'
+								}
+							,								{
+									key: 'game-17',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Cyclades</b><br/>This was my first euro-style dudes-on-a-map board game with a theme that I absolutely love: Ancient Greek and Greek Mythology. The game has bidding and area control elements and a lot of theme and it\'s still one of my favorites of this genre!'
+								}
+							,								{
+									key: 'game-168',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Kemet</b><br/>This is a more cutthroat brother to more beautiful Cyclades, but just as good! I\'ve always enjoyed area-control games that include eurogame elements, that involve \'growing asymmetry\' - which means that players start in a similar position but evolve characteristics and special powers over time. Kemet nails this brilliantly!'
+								}
+							,								{
+									key: 'game-228',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Inis</b><br/>I was skeptical at first when I heard about another dudes-on-a-map area control game by Matagot, but it definitely deserves its spot! Inspired by the latest trend of card driven (drafting or deckbuilder) limited action area control games - like Blood Rage or A Study in Emerald - this game manages to stand out from the rest by its tight, multi-layered victory conditions and cards. It\'s very unique and you can be sure Matagot is about to expand this soon, like it did with its siblings.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-271',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Kodama</b><br/>This is an incredible sweet player of tableu building with a public draft of tree cards. Trick is that you are visually building a tree and connecting cards to one another however you like! It is a little simple, but this makes it very family friendly and it has not bothered even the most hardcore gamers when it surprisingly gets laid out on the table.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-287',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Condottiere</b><br/>This is a tight card game way ahead of its time. Released in the 90s, this game feels as fresh and new as anything released today. It\'s a limited area conquering game driven by cards and combinatoric card play. The card effects are so well entwined with one another that almost every turn feels interesting and the game does not outstay its welcome either!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-68',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Legacy</b><br/>This is a worker placement game in 18th century where players build a family tree in a quest to create a \'legacy\' for this family, gain riches, fulfil goals and gain fame and glory. It\'s an incredibly smart design and while it requires the first expansion to introduce more player interaction between players outside worker placement, it is a fun game to try even by playing solo.'
+								}
+							,								{
+									key: 'game-109',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Neuroshima Hex</b><br/>This game is one of the best semi-thematic abstract games out there. With expansions it has a lot of different factions with asymmetric powers that somehow still manage to be balanced between one another, which is a credit for the mathematical genius of the designer. While most enjoy this game as a two-player game, I\'ve had great plays even with three-four player games.'
+								}
+							,								{
+									key: 'game-55',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>51st State</b><br/>I used to own the original 51st State, but this new Master Set manages to polish what is one of my very favorite strategy games! It is an amazing game in so many levels. The engine building is wonderful, the multi-use cards make every card a unique choice and the game is incredibly thematic even if it may look like it from the setup. I absolutely love this game!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-70',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Imperial Settlers</b><br/>51st State was in my collection already before the remastered edition came out, but once Imperial Settlers was released, it pushed older 51st State out. It\'s an incredibly unique game, the multi-use cards and the engine building it offers within the tableu you are building in front of you is very deep. I like the remastered edition of 51st State more, but Imperial Settlers is not going anywhere!'
+								}
+							,								{
+									key: 'game-76',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tragedy Looper</b><br/>This game from eastern board gaming industry is more psychological, more surreal and more tense than most western board games. In this one-vs-many game, players are attempting to solve a mystery and put an end to a specific event of which they have no knowledge. If the mastermind wins a round - and they will win - clock is turned back and another attempt can be made! While difficult to explain at first, this is one of the most unique boardgaming experiences out there.'
+								}
+							,								{
+									key: 'game-179',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Shadows Over Camelot</b><br/>It took me a while to get this game into my collection as I felt it might be outdated compared to newer cooperative games with a possible traitor element, but it is not outdated at all! The game involves Arthur\'s Knights of the Round Table who are sent on different missions in order to put an end to the war from multitude of enemies. It\'s highly thematic, incredibly beautiful and the expansion only adds to theme and its nailbiting difficulty!'
+								}
+							,								{
+									key: 'game-79',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dungeon Petz</b><br/>This is a highly thematic worker placement game by Vlaada Chvatil in the same universe as his Dungeon Lords game. In here players are buying, growing and training and taking care of cute monsters that grow up to be huge, terrifying behemoths! Or not. Humor is at the very core of this slightly complex eurogame and expansions adds even more to it, but it is wonderful!'
+								}
+							,								{
+									key: 'game-102',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Alchemists</b><br/>While this board game (just like XCOM) requires the use of an app in phone, it implements it perfectly. This is a worker placement game where players are experimenting with (you guessed it) alchemy, mixing potions and testing them on themselves or students or potential buyers. Humor is straight out of Vlaada Chvatil\'s playbook and he had strong influence on this games design. Highly recommended even though it\'s slightly on a heavier side!'
+								}
+							,								{
+									key: 'game-134',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Trickerion</b><br/>This game is almost flying under the radar of many board gamers, but it\'s one of the most beautiful board games of all time and it has a fair share of truly innovative and unique game mechanisms that spice up the usual worker placement eurogame. There\'s a lot of game in this box!'
+								}
+							,								{
+									key: 'game-48',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Archipelago</b><br/>This is another game that Shut Up and Sit Down made me fall in love with. It is a euro-worker-placement game that involves tight interaction between players together with area exploration, light engine building and semi-cooperative (and incredibly thematic) elements where players have to take care of natives whom they now rule over. This game is amazing!'
+								}
+							,								{
+									key: 'game-178',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tzolk’in</b><br/>I managed to ignore this games popularity for a long time before finally trying it - only to regret that I had not discovered it sooner! This is a great worker placement game with timing mechanism when you \'remove\' a worker from the field you placed it on. The board is dynamic and shifts around, allowing you to reap the rewards and time your moves to near perfection. While it can have analysis paralysis, this would never hold me back from getting it on table.'
+								}
+							,								{
+									key: 'game-86',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Suburbia</b><br/>If there is a game that deserves a Mensa-select title, it is this one. This brilliant tile-laying game is absolutely deep in how the gears fit together and how one tile affects another and it\'s addictive at the same time. On top of this is a fascinating acceleration-deceleration mechanism that can be difficult to grasp for some players, but this alone is why I consider it much better than Mad King Ludwig!'
+								}
+							,								{
+									key: 'game-99',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Formula D</b><br/>This is the ultimate racing board game and while I play it with my enhanced house rule variant that manages to add even more theme to the game, the game is great even out of the box as is! I have bought only some additional tracks for it (there are a lot more available) so to cover different driving styles and my friends always wish to hold a whole season of this - for which we\'ve not had the time, yet!'
+								}
+							,								{
+									key: 'game-217',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Chinatown</b><br/>I didn\'t pay enough attention when Quinns of Shut Up and Sit Down was reviewing the game initially. It was only during my re-watch of the show where I realized the genius of this game. Chinatown is a pure negotiation game with limiter deterministic game elements, but what makes this game brilliant is the fact that while in most negotiation games you negotiate with threats, in this game your aim is that both sides get a good deal. It feels far more natural as a result!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-267',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>City of Spies</b><br/>This semi-thematic abstract game full of double-guessing and outsmarting the other players feels small in scope when set up, but the interaction of the game board and players played tiles are what give the game a wonderful depth. This game will likely fly under the radar in time, but if you manage to get a chance, play it!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-196',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Black Orchestra</b><br/>Game Salute gets a lot of criticism as a producer and publisher of games at times - and deservedly so - but I am so thankful they managed to publish this game! It\'s a highly thematic, strongly historical cooperative game about a plot to kill Adolf Hitler during the world war. It\'s tense and while a little too strongly leaning upon luck, this adds to the theme and uncertainty of the most dangerous of plots.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-227',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>V-Commandos</b><br/>Not many knew that this game was in development. It was mildly funded through Kickstarter and did not have enough \'miniatures\' (in fact, none!). But it ended up to be a great thematic semi-abstract cooperative game! Game comes with plenty of scenarios and variable elements that give the game a lot of replayability and the game can be played as a gateway without much problem as well.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-220',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Escape from Colditz</b><br/>This new edition of a nearly-forgotten-classic board game is a gift by Osprey Games first and foremost. Even new games rarely get a production treatment this beautiful. And while the game involves dice with roll and move elements and somewhat archaic gameplay, it is polished enough that my group really enjoyed it! Despite the game taking four hours!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-290',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tesla vs. Edison</b><br/>Investment games have become a newer fascination to me, since I really love the player interaction where it\'s possible to not just have tightly integrated game mechanisms between players, but also a layer of investing in the success of other players for your own benefit to some extent. And while 18xx games haven\'t managed to grip me, this one - about the energy companies struggle for success -  certainly did!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-281',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Great Western Trail</b><br/>I didn\'t consider this for my collection at first - it was only after playing my friends copy that I realized that this is a really good and elegant game. Every game mechanism is so neatly connected with one another and the game is so much about the balancing of your actions against quick rewards that I cannot help but recommend this to almost any gamer!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-36',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Munchkin Quest</b><br/>It is pretty common to see someone talk about Munchkin in a non-positive way, me included. Except with this game! This is a dungeon crawler in Munchkin fashion, highly humorous and thematic, but also more interesting as a game in a way Munchkin itself is not, since you get to explore various rooms, cooperate with others or obstruct them. It\'s dynamic and very fun, even though it usually takes longer than you expect!'
+								}
+							,								{
+									key: 'game-201',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Scythe</b><br/>I didn\'t back this on Kickstarter. In fact it\'s my ever-persistent curse of not backing Stonemaier Games Kickstarters only to end up regretting it down the road and having to buy it at a premium. While this game was hyped, it didn\'t get in the way of enjoying this masterpiece of a strategy game. Not only is it beautiful in artwork, but also in game mechanisms!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-19',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Coach Ride to Devil’s Castle</b><br/>This game has multiple names and this box is actually that of an Italian Edition, but with English/German sets of cards. This is a gem that not many know about. Players are in hidden teams and are not sure who their teammates are. A team needs to gather a set of items to win. If a team player feels their team has the items, they can announce victory - hoping that the condition is actually met. It is a great hidden role, hidden team, bluffing and social manipulation game!'
+								}
+							,								{
+									key: 'game-174',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Watchmen of Destiny</b><br/>This was a small Kickstarter project with absolutely adorable artwork of medieval-dressed animals! The game is a little simple and I expected a little more depth from it, but it is pretty simple to explain and does not take too long to play.<br/><i style="font-weight:bold;color:#f7c036">first time, but not in collection any more</i>'
+								}
+							,								{
+									key: 'game-226',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Stockpile</b><br/>Right before I started looking for more serious investment games, I ended up buying this. Stockpile replaced Airlines Europe in my collection since it had the similar \'hidden value\' element without the network building in that game. While I usually like more complex games, this is really great!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-185',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tammany Hall</b><br/>Tense area majority games with negotiation and gritty theme are always a simple way of getting me interested in a game. Tammany Hall is about political climate in New York and manipulation of immigrants in getting into power. It\'s a very smart design and one I can easily recommend to groups that like simpler rules, but a lot of depth.'
+								}
+							,								{
+									key: 'game-38',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Cave</b><br/>While it can be a little fiddly with all the ways it allows players to score points, this is an incredibly thematic game about a real-life hobby of spelunking. Despite a real live cave-exploring theme, often times the game feels far more thrilling than any kind of fantasy exploration. Using ropes to climb, using effort to squeeze through tight places, you take risks and hope to come back alive!'
+								}
+							,								{
+									key: 'game-90',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Arctic Scavengers</b><br/>Shut Up and Sit Down review show helped me discover this absolutely brilliant, tight and tense deckbuilder that is dripping from theme without having any flavor text. It\'s post apocalypse without zombies and aliens and about survival in endless winter, building up your group of followers to outlast that of other players. This is great and the expansion adds a lot of variability as well.'
+								}
+							,								{
+									key: 'game-176',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Ninja Camp</b><br/>Have you played &quot;Hey That\'s My Fish!&quot;? This is that game, except much better. It is a semi-filler that involves smart area movement puzzle with card play based on areas you move on to. It is really good and I recommend it for any group!'
+								}
+							,								{
+									key: 'game-295',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Nyet</b><br/>You don\'t see any other trick-taking game on my shelves simply because it seems to be a game that no one is able to explain the category in an easy manner. Even rules of Nyet seem to imply that you have played trick taking games before. And I am unable to explain the game in this short snippet either. But I really like that setup is, in a way, part of this game itself!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-12',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Libertalia</b><br/>This is a really smart card based board game. Every player starts with the same set of randomnly selected pirate-themed cards and plays one every turn - which get revealed simultaneously. The dynamic effects and sequence of those cards are the heart of the game, as players end up double guessing what some players play in quest to get the best treasure. I love it!'
+								}
+							,								{
+									key: 'game-98',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Euphoria</b><br/>When I discovered Viticulture and then played Euphoria, I started feeling that Jamey Stegmaier can do no wrong. Euphoria is a worker placement game where workers are instead dice, rather than meeples. Smart game mechanisms and unique dystopian theme makes this a really interesting experience, but one that I feel would benefit from an expansion (which should come in the future!).'
+								}
+							,								{
+									key: 'game-27',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Robinson Crusoe</b><br/>This game was so difficult to find after it was released and it took me almost a year after I had heard about it to have my own copy! But it was worth it, this absolutely a little too complex and absolutely worth it and strongly thematic cooperative game about survival on an island is one of my favorite games of all time and I consider it the de factor lifetime masterpiece of Ignacy Trewiczek.'
+								}
+							,								{
+									key: 'game-33',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Merchants and Marauders</b><br/>I bought this game under impulse one Christmas, not sure if I need another pirate game - not realizing that this game ends up being \'the\' pirate game. Everybody has their own ship and their own freedom to go about their way as they wish. While turns in the game can take a long time, together with the expansion this game is an absolute epic of sailing free and living a life at sea!'
+								}
+							,								{
+									key: 'game-157',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Dojo Kun</b><br/>Me and my girlfriend picked this up from our visit to Milan. We have a rule that we visit game stores in cities we visit with an intent to take something with us, but not just any game - it has to have a potential! And this one does. While it has been picked up by CMOM for US release, this is a fun worker placement game where you train your fighters for two tournaments. It\'s like Karate Kid and Street Fighter in a box, with quite a bit of European satire applied.<br/><i style="font-weight:bold;color:#f46b42">not in collection any more</i>'
+								}
+							,								{
+									key: 'game-80',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Darkest Night</b><br/>Darkest Night is one of those \'indie\' board games that many don\'t know even exists. This is a game where players - with asymmetric heroes - are struggling in guerilla-style warfare against ancient evil that has already won the war and conquered the world. It\'s thematic and at the same time a personal and tight up-hill battle. I really love it and the game (and expansions) has enough different characters to last for years in replayability.'
+								}
+							,								{
+									key: 'game-223',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Captain Sonar</b><br/>I am fortunate that I have a steady group of around 30 people whom to lure into boardgaming events, as this game requires 8 players to be truly great. And whenever it has been on a table, it has been absolutely tense! Two teams running a submarine in a mix of real time Battleship and Snake game is a brilliant idea by the designers!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-57',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Zombie 15’</b><br/>Real-time games are a hit-or-miss for me in a very black-and-white way. I either love them or hate them. This one I love! It is a zombie survival cooperative game about completing a goal in a thematic scenario that is slightly different each time. It is smart and addictive and despite setup being just as long as the game itself, everyone around the table gets involved and wants to play more and more.'
+								}
+							,								{
+									key: 'game-111',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Forbidden Stars</b><br/>This absolutely grandiose and epic strategy game set in the eternal war of Warhammer 40k universe combines what is great about A Game of Thrones board game and Kemet. This game deserved to get at least one or two expansions to increase variability of factions, but it\'s not leaving my collection at least until tears have dried from the Fantasy Flight and Games Workshop breakup. I love this game.'
+								}
+							,								{
+									key: 'game-144',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Rebellion</b><br/>I was skeptical when this was announced, thinking that it\'s just another one of the space opera war games with Star Wars team attached. And it is. But it is oh-so-very-good that I forgive it the tropes. It borrows a little from War of the Ring and Twilight Imperium  and offers a great experience for a player who may not even love Star Wars that much. And while most say it is a two-player game I disagree - my group enjoys this in teams!'
+								}
+							,								{
+									key: 'game-112',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Steampunk Rally</b><br/>I rarely support Kickstarters and when I do, it\'s after immense research and despite that only sometimes a real \'gem\' is released. This is one of them, it is a brilliant game with wonderfully connected game mechanisms. It\'s a true engine building game with layers and a humorous, joyful theme. I highly recommend this game to more or less anyone!'
+								}
+							,								{
+									key: 'game-104',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Specter Ops</b><br/>There was a time when I thought Specter Ops might replace Letters from Whitechapel in my collection (and it briefly did!), but it\'s still a different game. A lot more tactical and immediate, this hidden movement capture-the-agent game involves special powers and a really open map where the action takes place. Highly recommended!'
+								}
+							,								{
+									key: 'game-120',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Fury of Dracula</b><br/>After being out of print for so long (and seemingly going out of print again for an eternity), this incredibly thematic and epic hidden movement game manages to create an experience unlike other hidden movement games. While not as elegant as Whitechape and not as tactical as Specter Ops, it is Fury of Dracula that tells a better story overall and my group is still talking about what happened the last time it was on table!'
+								}
+							,								{
+									key: 'game-23',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Letters from Whitechapel</b><br/>Not many games on my shelf have been on the table for 3 hours only to end up players immediately requesting to play it again. And again. In the same night! This game is exactly that and this is a streamlined, incredibly well balanced and very tight hidden movement game about chasing down Jack the Ripper. And still my favorite in the genre!'
+								}
+							,								{
+									key: 'game-166',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Study in Emerald</b><br/>It took me a while to discover why Martin Wallace is one of the most unique game designers out there. This is the second edition of one of his most known games and while many prefer the first edition, I really like the second edition. It involves hidden teams, deck building, area majority and has a gripping arc that players themselves create. I really love this game and actually wish I had less games so it would get on table far more frequently!'
+								}
+							,								{
+									key: 'game-261',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>The Ravens of Thri Sahashri</b><br/>While I am not trying to collect many smaller games in general, some games with quirky mechanisms and themes attract me like a moth to a flame. This is a two-player-game similar to And Then We Held Hands, though the only similiarity in mechanism is that there can be no communication. While difficult to explain, I highly recommend picking it up, especially if you have a gamer partner! This box is custom made as the original box did not fit sleeves.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-276',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Millions of Dollars</b><br/>Shut Up and Sit Down is responsible for selling me the idea of this game. It is a sandbox-like negotiation game with a prisoners dilemma type of flavor mixed in. While it requires the right group and takes a while to properly click, I totally think it is worth it!<br/><i style="font-weight:bold;color:#f7c036">first time, but not in collection any more</i>'
+								}
+							,								{
+									key: 'game-216',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Beyond Baker Street</b><br/>This game takes what is in Hanabi and makes it more into a thematic game. While I\'ve only played it once so far and my partner was not fascinated by it, I still really like it and think it has a huge potential to possibly even replace Hanabi in my collection.<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-40',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Quantum</b><br/>While FunForge messed up the marketing and quality control of Quantum during release, this is one of the best games I\'ve played! Dice are ships, dice ships say what their power is, how strong they are, how much can they move and how well they contribute to building on planets! Eric Zimmerman has designed this wonderful combination of mechanisms in what can only be described as an elegant game design.'
+								}
+							,								{
+									key: 'game-87',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Theseus</b><br/>I really like Neuroshima Hex, so I had to get this game as well. It carries the feel of Neuroshima Hex, but with entirely different mechanisms, while the player factions are still asymmetric to one another. In this game players faction - be it soldiers, scientists, aliens, robots and more with an expansion - are trying to survive in failing space station and outsmart and outlast other players factions. It\'s tense and incredibly smart semi-thematic-abstract board game.'
+								}
+							,								{
+									key: 'game-93',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>XCOM</b><br/>This game is one of the best cooperative games out there. It\'s entirely asymmetric, incredibly thematic and very tense - often to the level of feeling unfair. But it gives just enough hope to players that they feel that maybe we can win against this immense force of aliens. This board game only takes the global scale strategy management from XCOM games however, if you want a tactical combat game then Level 7 Omega Protocol compliments it perfectly.'
+								}
+							,								{
+									key: 'game-6',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Battlestar Galactica</b><br/>Now here\'s a game I never thought I could get played when I bought it at the start of my adventures in the hobby. It is big, it is epic, it is tied to science fiction theme that many don\'t know about. I bought it because I had heard good things and I loved the show. Never did I imagine that it would become one of the most requested board games by my group even years down the road!'
+								}
+							,								{
+									key: 'game-127',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Salem</b><br/>While there are many games named Salem, it is this one that I find most thematic and most entertaining. This is a Werewolf-style game that does include player elimination, but there are multitude ways around it that are entirely under player control. Besides lying and bluffing and social deduction, this game also includes well-timed card play. It\'s hard to get, but incredibly fun if you like this kind of thing!'
+								}
+							,								{
+									key: 'game-160',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mascarade</b><br/>Oh hells how difficult it was to get an idea how this game exactly plays based on reviews. Every player has a role, but they can secretly change their role with that of another player - and you cannot see what your role is unless you spend your turn doing so. It sounded too random, too chaotic and not fun. Reality is that the game is none of that. There is no luck - it\'s all about double-guessing and reading your friends and it is incredibly fun as you are reacting to what your friends are doing rather than what a dice roll or card draw decides. It is a great social filler!'
+								}
+							,								{
+									key: 'game-162',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Mission: Red Planet</b><br/>I did not have the chance to play this before the new edition was released and I bought it based on hype of a lot of reviewers in board game media. And I was not disappointed! While it is a smaller game in the end than it initially feels like, I really like the area influence and role selection mechanisms that make it a very interactive game of outplaying your friends!'
+								}
+							,								{
+									key: 'game-239',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Tigris and Euphrates</b><br/>Reiner Knizia designs usually don\'t excite me, at all. And while I\'ve enjoyed some of his games, they have generally not been great. This one - considered his masterpiece by many - is one of the best semi-thematic abstracts I have ever played! It\'s incredibly deep board game simulation of early civilization development, it\'s tense and interaction heavy. I highly recommend this to strategy gamers!<br/><i style="font-weight:bold;color:#3ad18a">first time in collection</i>'
+								}
+							,								{
+									key: 'game-133',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>Runebound</b><br/>Runebound entered my collection when The Witcher board game was failing me. I had been looking for a fantasy adventure game while avoiding Mage Knight due to wanting to enjoy games with larger groups. And I\'ve found Runebound to be really, really good. I only wish that expansions would add more variety and more charm and adventure to this game than they have so far.'
+								}
+							,								{
+									key: 'game-15',
+																			selected: false,
+																		isSelectable: false,
+									isDeselectable: false,
+																		toolTip: '<b>A Game of Thrones</b><br/>This epic interpretation of George R.R. Martin\'s books in board game form is near-perfect. Full of intense negotiations, secret actions and betrayal in the rawest of forms, every time this game is set up on the table it becomes an event. It takes every effort from the player to emerge victorious and after every play you feel like you want a good twelve hours of sleep. Awesome!'
+								}
+											]
+			});
+					});
+				var width = 1000;
+		var height = 1371;
+		var multiplier = 2;
+		function smaller(){
+			width = width/2;
+			height = height/2;
+			multiplier = multiplier*2;
+			$('#zoom').val(multiplier);
+			$('#container').animate({
+				width:width
+			}, 500, function() {});
+			$('img').mapster('resize',width,height,500);
+		}
+		function bigger(){
+			width = width*2;
+			height = height*2;
+			multiplier = multiplier/2;
+			$('#zoom').val(multiplier);
+			$('#container').animate({
+				width:width
+			}, 500, function() {});
+			$('img').mapster('resize',width,height,500);
+		}
+		
+			</script>
+</head>
+	<body style="text-align:center;background-color:#eff0f2;font:12px Verdana;">
+					<p style="font-size:20px;"></p>
+			<div id="container" style="width:1000px;margin:15px auto 15px auto;">
+				<img id="picture" src="small3.jpg" id="picture" width="1000" style="border:1px solid blue;" usemap="#map"/>
+				<map name="map" id="map">									<area href="https://www.boardgamegeek.com/boardgame/125153/gallerist" target="_BLANK" data-key="game-138" tooltip="" href="#" shape="poly" coords="8,19,6,100,329,105,329,23" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/147101/tuscany-expand-world-viticulture" target="_BLANK" data-key="game-189" tooltip="" href="#" shape="poly" coords="333,4,333,111,560,113,561,10" />
+																	<area href="https://www.boardgamegeek.com/boardgame/119890/agricola-all-creatures-big-and-small" target="_BLANK" data-key="game-9" tooltip="" href="#" shape="poly" coords="563,20,563,70,770,72,770,23" />
+																	<area href="https://www.boardgamegeek.com/boardgame/8217/san-juan" target="_BLANK" data-key="game-182" tooltip="" href="#" shape="poly" coords="772,28,961,28,962,71,771,72" />
+																	<area href="https://www.boardgamegeek.com/boardgame/198773/codenames-pictures" target="_BLANK" data-key="game-155" tooltip="" href="#" shape="poly" coords="969,18,969,71,1134,71,1131,18" />
+																	<area href="https://www.boardgamegeek.com/boardgame/12333/twilight-struggle" target="_BLANK" data-key="game-141" tooltip="" href="#" shape="poly" coords="1170,38,1171,89,1404,90,1404,39" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/40210/race-galaxy-rebel-vs-imperium" target="_BLANK" data-key="game-255" tooltip="" href="#" shape="poly" coords="1404,24,1406,88,1548,87,1544,20" />
+																	<area href="https://www.boardgamegeek.com/boardgame/14996/ticket-ride-europe" target="_BLANK" data-key="game-128" tooltip="" href="#" shape="poly" coords="17,103,329,106,325,176,16,174" />
+																	<area href="https://www.boardgamegeek.com/boardgame/196/kremlin" target="_BLANK" data-key="game-250" tooltip="" href="#" shape="poly" coords="334,114,333,176,560,177,560,114" />
+																	<area href="https://www.boardgamegeek.com/boardgame/12493/twilight-imperium-third-edition" target="_BLANK" data-key="game-249" tooltip="" href="#" shape="poly" coords="561,72,561,176,1170,176,1169,70" />
+																	<area href="https://www.boardgamegeek.com/boardgame/101721/mage-wars-arena" target="_BLANK" data-key="game-97" tooltip="" href="#" shape="poly" coords="1169,90,1598,87,1598,171,1168,175" />
+																	<area href="https://www.boardgamegeek.com/boardgame/120677/terra-mystica" target="_BLANK" data-key="game-91" tooltip="" href="#" shape="poly" coords="149,242,148,334,381,333,382,242" />
+																	<area href="https://www.boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1" target="_BLANK" data-key="game-257" tooltip="" href="#" shape="poly" coords="128,333,409,335,409,411,128,410" />
+																	<area href="https://www.boardgamegeek.com/boardgame/161614/stockpile" target="_BLANK" data-key="game-136" tooltip="" href="#" shape="poly" coords="121,412,120,482,428,482,426,411" />
+																	<area href="https://www.boardgamegeek.com/boardgame/97207/dungeon-petz" target="_BLANK" data-key="game-130" tooltip="" href="#" shape="poly" coords="120,487,118,559,426,560,425,486" />
+																	<area href="https://www.boardgamegeek.com/boardgame/155624/specter-ops" target="_BLANK" data-key="game-8" tooltip="" href="#" shape="poly" coords="480,262,478,339,789,341,788,260" />
+																	<area href="https://www.boardgamegeek.com/boardgame/187645/star-wars-rebellion" target="_BLANK" data-key="game-32" tooltip="" href="#" shape="poly" coords="480,341,478,477,784,478,784,339" />
+																	<area href="https://www.boardgamegeek.com/boardgame/13/catan" target="_BLANK" data-key="game-165" tooltip="" href="#" shape="poly" coords="478,478,478,561,785,562,782,480" />
+																	<area href="https://www.boardgamegeek.com/boardgame/109276/kanban-automotive-revolution" target="_BLANK" data-key="game-205" tooltip="" href="#" shape="poly" coords="840,265,836,322,1152,325,1152,266" />
+																	<area href="https://www.boardgamegeek.com/boardgame/170216/blood-rage" target="_BLANK" data-key="game-293" tooltip="" href="#" shape="poly" coords="834,326,836,433,1156,432,1152,326" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/154638/7-wonders-babel" target="_BLANK" data-key="game-14" tooltip="" href="#" shape="poly" coords="848,434,849,476,1148,478,1145,434" />
+																	<area href="https://www.boardgamegeek.com/boardgame/68448/7-wonders" target="_BLANK" data-key="game-135" tooltip="" href="#" shape="poly" coords="850,475,850,558,1148,561,1145,476" />
+																	<area href="https://www.boardgamegeek.com/boardgame/93260/summoner-wars-master-set" target="_BLANK" data-key="game-30" tooltip="" href="#" shape="poly" coords="1204,249,1207,335,1519,332,1516,247" />
+																	<area href="https://www.boardgamegeek.com/boardgame/193037/dead-winter-long-night" target="_BLANK" data-key="game-56" tooltip="" href="#" shape="poly" coords="1206,335,1208,410,1515,407,1513,331" />
+																	<area href="https://www.boardgamegeek.com/boardgame/150376/dead-winter-crossroads-game" target="_BLANK" data-key="game-51" tooltip="" href="#" shape="poly" coords="1207,410,1206,483,1518,481,1516,408" />
+																	<area href="https://www.boardgamegeek.com/boardgame/27162/kingsburg" target="_BLANK" data-key="game-150" tooltip="" href="#" shape="poly" coords="1212,483,1212,558,1518,555,1515,482" />
+																	<area href="https://www.boardgamegeek.com/boardgame/10547/betrayal-house-hill" target="_BLANK" data-key="game-d344" tooltip="" href="#" shape="poly" coords="136,580,132,668,411,671,412,585" />
+																	<area href="https://www.boardgamegeek.com/boardgame/182028/through-ages-new-story-civilization" target="_BLANK" data-key="game-245" tooltip="" href="#" shape="poly" coords="139,671,136,746,410,747,410,673" />
+																	<area href="https://www.boardgamegeek.com/boardgame/169786/scythe" target="_BLANK" data-key="game-107" tooltip="" href="#" shape="poly" coords="112,746,113,850,426,850,428,750" />
+																	<area href="https://www.boardgamegeek.com/boardgame/10630/memoir-44" target="_BLANK" data-key="game-117" tooltip="" href="#" shape="poly" coords="111,853,111,924,419,929,419,853" />
+																	<area href="https://www.boardgamegeek.com/boardgame/169255/game-thrones-card-game-second-edition" target="_BLANK" data-key="game-288" tooltip="" href="#" shape="poly" coords="512,582,508,633,775,639,777,588" />
+																	<area href="https://www.boardgamegeek.com/boardgame/39463/cosmic-encounter" target="_BLANK" data-key="game-116" tooltip="" href="#" shape="poly" coords="484,633,480,717,792,717,790,638" />
+																	<area href="https://www.boardgamegeek.com/boardgame/176920/mission-red-planet-second-edition" target="_BLANK" data-key="game-53" tooltip="" href="#" shape="poly" coords="482,719,485,791,792,791,792,716" />
+																	<area href="https://www.boardgamegeek.com/boardgame/111124/dark-moon" target="_BLANK" data-key="game-132" tooltip="" href="#" shape="poly" coords="480,793,480,848,791,849,792,792" />
+																	<area href="https://www.boardgamegeek.com/boardgame/103343/game-thrones-board-game-second-edition" target="_BLANK" data-key="game-110" tooltip="" href="#" shape="poly" coords="480,849,484,924,792,926,792,849" />
+																	<area href="https://www.boardgamegeek.com/boardgame/38453/space-alert" target="_BLANK" data-key="game-95" tooltip="" href="#" shape="poly" coords="828,634,825,874,903,874,900,634" />
+																	<area href="https://www.boardgamegeek.com/boardgame/171623/voyages-marco-polo" target="_BLANK" data-key="game-126" tooltip="" href="#" shape="poly" coords="916,610,915,686,1151,683,1148,610" />
+																	<area href="https://www.boardgamegeek.com/boardgame/182340/star-trek-frontiers" target="_BLANK" data-key="game-190" tooltip="" href="#" shape="poly" coords="906,686,908,768,1168,766,1164,687" />
+																	<area href="https://www.boardgamegeek.com/boardgame/102794/caverna-cave-farmers" target="_BLANK" data-key="game-11" tooltip="" href="#" shape="poly" coords="916,769,915,873,1152,871,1148,765" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/198452/betrayal-house-hill-widows-walk" target="_BLANK" data-key="game-183" tooltip="" href="#" shape="poly" coords="877,871,878,925,1159,923,1159,871" />
+																	<area href="https://www.boardgamegeek.com/boardgame/183394/viticulture-essential-edition" target="_BLANK" data-key="game-62" tooltip="" href="#" shape="poly" coords="1284,614,1284,718,1516,714,1513,609" />
+																	<area href="https://www.boardgamegeek.com/boardgame/148943/coup-rebellion-g54" target="_BLANK" data-key="game-172" tooltip="" href="#" shape="poly" coords="1192,584,1194,787,1285,789,1282,583" />
+																	<area href="https://www.boardgamegeek.com/boardgame/3076/puerto-rico" target="_BLANK" data-key="game-81" tooltip="" href="#" shape="poly" coords="1286,719,1287,789,1517,784,1515,714" />
+																	<area href="https://www.boardgamegeek.com/boardgame/146508/time-stories" target="_BLANK" data-key="game-129" tooltip="" href="#" shape="poly" coords="1219,790,1220,863,1532,859,1529,786" />
+																	<area href="https://www.boardgamegeek.com/boardgame/2651/power-grid" target="_BLANK" data-key="game-20" tooltip="" href="#" shape="poly" coords="1233,865,1235,921,1519,920,1517,865" />
+																	<area href="https://www.boardgamegeek.com/boardgame/478/citadels" target="_BLANK" data-key="game-10" tooltip="" href="#" shape="poly" coords="110,1035,111,1082,244,1081,245,1035" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/92898/innovation-echoes-past" target="_BLANK" data-key="game-78" tooltip="" href="#" shape="poly" coords="113,1084,114,1122,255,1118,252,1080" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/34499/race-galaxy-gathering-storm" target="_BLANK" data-key="game-206" tooltip="" href="#" shape="poly" coords="117,1123,118,1193,261,1188,260,1118" />
+																	<area href="https://www.boardgamegeek.com/boardgame/143741/bang-dice-game" target="_BLANK" data-key="game-164" tooltip="" href="#" shape="poly" coords="113,1190,114,1225,257,1225,255,1189" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/2993/carcassonne-expansion-1-inns-cathedrals" target="_BLANK" data-key="game-243" tooltip="" href="#" shape="poly" coords="114,1225,113,1296,259,1295,259,1224" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/153773/carcassonne-hills-sheep" target="_BLANK" data-key="game-263" tooltip="" href="#" shape="poly" coords="113,1297,113,1368,260,1367,260,1297" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/193823/viticulture-moor-visitors-expansion" target="_BLANK" data-key="game-260" tooltip="" href="#" shape="poly" coords="291,1034,290,1067,392,1069,392,1035" />
+																	<area href="https://www.boardgamegeek.com/boardgame/128882/resistance-avalon" target="_BLANK" data-key="game-52" tooltip="" href="#" shape="poly" coords="273,1067,272,1114,430,1117,429,1069" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/61001/cosmic-encounter-cosmic-incursion" target="_BLANK" data-key="game-154" tooltip="" href="#" shape="poly" coords="292,1116,292,1153,427,1156,426,1117" />
+																	<area href="https://www.boardgamegeek.com/boardgame/63888/innovation" target="_BLANK" data-key="game-37" tooltip="" href="#" shape="poly" coords="280,1157,281,1194,421,1197,421,1157" />
+																	<area href="https://www.boardgamegeek.com/boardgame/188/go" target="_BLANK" data-key="game-121" tooltip="" href="#" shape="poly" coords="286,1198,287,1244,426,1247,426,1198" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/111661/7-wonders-cities" target="_BLANK" data-key="game-64" tooltip="" href="#" shape="poly" coords="278,1248,277,1286,425,1288,427,1249" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/92539/7-wonders-leaders" target="_BLANK" data-key="game-242" tooltip="" href="#" shape="poly" coords="279,1292,282,1331,428,1332,428,1292" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/195034/stockpile-continuing-corruption" target="_BLANK" data-key="game-275" tooltip="" href="#" shape="poly" coords="278,1337,277,1368,417,1364,415,1337" />
+																	<area href="https://www.boardgamegeek.com/boardgame/171/chess" target="_BLANK" data-key="game-173" tooltip="" href="#" shape="poly" coords="465,1181,465,1369,523,1367,525,1179" />
+																	<area href="https://www.boardgamegeek.com/boardgame/1923/mindtrap" target="_BLANK" data-key="game-285" tooltip="" href="#" shape="poly" coords="510,1046,508,1146,611,1148,609,1049" />
+																	<area href="https://www.amazon.com/North-American-Chess-Clock-timer/dp/B00312D2OU/" target="_BLANK" data-key="game-272" tooltip="" href="#" shape="poly" coords="641,1017,644,1074,794,1073,793,1015" />
+																	<area href="https://boardgamegeek.com/boardgame/205716/new-angeles" target="_BLANK" data-key="game-268" tooltip="" href="#" shape="poly" coords="1187,2036,1185,1964,1483,1966,1483,2040" />
+																	<area href="https://www.boardgamegeek.com/boardgame/822/carcassonne" target="_BLANK" data-key="game-262" tooltip="" href="#" shape="poly" coords="612,1075,612,1147,810,1147,810,1073" />
+																	<area href="https://www.boardgamegeek.com/boardgame/811/rummikub" target="_BLANK" data-key="game-266" tooltip="" href="#" shape="poly" coords="532,1149,535,1207,801,1209,800,1147" />
+																	<area href="https://www.boardgamegeek.com/boardgame/1544/beyond-balderdash" target="_BLANK" data-key="game-278" tooltip="" href="#" shape="poly" coords="529,1210,529,1289,805,1287,804,1208" />
+																	<area href="https://www.boardgamegeek.com/boardgame/2381/scattergories" target="_BLANK" data-key="game-35" tooltip="" href="#" shape="poly" coords="525,1290,529,1367,812,1366,808,1289" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/124693/game-thrones-board-game-second-edition-dance-drago" target="_BLANK" data-key="game-122" tooltip="" href="#" shape="poly" coords="841,1049,840,1078,912,1084,912,1051" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/140261/game-thrones-board-game-second-edition-feast-crows" target="_BLANK" data-key="game-5" tooltip="" href="#" shape="poly" coords="838,1081,838,1111,912,1112,912,1082" />
+																	<area href="https://www.boardgamegeek.com/boardgame/31016/we-didnt-playtest-all" target="_BLANK" data-key="game-248" tooltip="" href="#" shape="poly" coords="830,1113,832,1219,908,1220,908,1115" />
+																	<area href="https://www.boardgamegeek.com/boardgame/41114/resistance" target="_BLANK" data-key="game-289" tooltip="" href="#" shape="poly" coords="941,1041,944,1070,1052,1069,1049,1037" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/148931/coup-reformation" target="_BLANK" data-key="game-59" tooltip="" href="#" shape="poly" coords="948,1070,948,1104,1052,1101,1052,1070" />
+																	<area href="https://www.boardgamegeek.com/boardgame/133473/sushi-go" target="_BLANK" data-key="game-92" tooltip="" href="#" shape="poly" coords="946,1105,949,1145,1056,1141,1050,1102" />
+																	<area href="https://www.boardgamegeek.com/boardgame/13823/fairy-tale" target="_BLANK" data-key="game-3" tooltip="" href="#" shape="poly" coords="946,1148,948,1176,1066,1175,1065,1146" />
+																	<area href="https://www.boardgamegeek.com/boardgame/147949/one-night-ultimate-werewolf" target="_BLANK" data-key="game-146" tooltip="" href="#" shape="poly" coords="921,1180,925,1220,1060,1218,1057,1178" />
+																	<area href="https://www.boardgamegeek.com/boardgame/173346/7-wonders-duel" target="_BLANK" data-key="game-151" tooltip="" href="#" shape="poly" coords="846,1221,848,1271,1058,1271,1060,1217" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/180585/time-stories-marcy-case" target="_BLANK" data-key="game-61" tooltip="" href="#" shape="poly" coords="844,1273,840,1315,1056,1314,1053,1271" />
+																	<area href="https://www.boardgamegeek.com/boardgame/166384/spyfall" target="_BLANK" data-key="game-50" tooltip="" href="#" shape="poly" coords="848,1318,848,1367,1060,1367,1058,1316" />
+																	<area href="https://www.boardgamegeek.com/boardgameexpansion/40688/treasure-chest" target="_BLANK" data-key="game-1" tooltip="" href="#" shape="poly" coords="1256,1020,1257,1078,1458,1073,1456,1018" />
+																	<area href="https://www.boardgamegeek.com/boardgame/21790/thurn-and-taxis" target="_BLANK" data-key="game-259" tooltip="" href="#" shape="poly" coords="1252,1081,1254,1154,1488,1152,1484,1078" />
+																	<area href="https://www.boardgamegeek.com/boardgame/174430/gloomhaven" target="_BLANK" data-key="game-163" tooltip="" href="#" shape="poly" coords="1215,1156,1216,1366,1522,1362,1517,1150" />
+																	<area href="https://www.boardgamegeek.com/boardgame/36218/dominion" target="_BLANK" data-key="game-29" tooltip="" href="#" shape="poly" coords="1063,1022,1074,1362,1175,1368,1170,1022" />
+																			<area href="" target="_BLANK" data-key="game-22" tooltip="" href="#" shape="poly" coords="1063,1022,1074,1362,1175,1368,1170,1022" />
+												</map>
+			</div>
+			</p>
+					
+			</body>
+</html>
